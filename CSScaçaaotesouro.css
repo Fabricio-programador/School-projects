@@ -1,0 +1,101 @@
+body {
+    /*  Estilização do body */
+    font-family: Arial, sans-serif;
+    background-color: rgb(26, 243, 73);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* Define que o elemento deve ter a altura total da página */
+}
+
+.container {
+    /*Estilização do container */
+    text-align: center;
+    background-color: rgb(2, 67, 7);
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+}
+
+#Dinheiro {
+    font-size: 15px;
+    font-weight: bolder;
+    color: goldenrod;
+    margin-bottom: 10px;
+}
+
+.grid {
+    /* Cria o grid */
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    /* Cria 5 células de 60 pixels cada*/
+    gap: 5px;
+    margin: 20px auto;
+    justify-content: center;
+}
+
+.celula {
+    /*Estiliza as células do grid*/
+    background-color: rgb(116, 48, 3);
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.celula:hover {
+    background-color: rgb(124, 54, 7);
+
+}
+
+.celula.Bomba {
+    /* Estiliza as células com bomba*/
+    background-color: black;
+}
+
+.celula.Tesouro {
+    /*Estiliza as células com tesouro */
+    background-color: rgb(202, 173, 57);
+}
+
+.celula.Revelada {
+    /* Estiliza as células que foram reveladas*/
+    background-color: rgb(88, 41, 10);
+}
+
+#reiniciar {
+    /*Estiliza o botão de reiniciar*/
+    background-color: rgb(103, 164, 12);
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-style: Arial, sans-serif;
+    font-weight: bolder;
+    color: white;
+    cursor: pointer;
+}
+
+#reiniciar:hover {
+    background-color: rgb(129, 195, 29);
+}
+
+#Dica {
+    /*Estiliza o botão de dica*/
+    background-color: rgb(219, 156, 9);
+    border: 2px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-style: Arial, sans-serif;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#Dica:hover {
+    background-color: rgb(242, 179, 32);
+}
